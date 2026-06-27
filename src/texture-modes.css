@@ -1,0 +1,15 @@
+aside .text-control input,
+aside .mode-control select {
+  grid-column: 2 / 4;
+  height: 32px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  background: #0a0e15;
+  color: #e6e9e5;
+  font: 11px var(--mono);
+  outline: 0;
+}
+
+aside .mode-control select {
+  cursor: pointer;
+}
