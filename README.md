@@ -123,3 +123,7 @@ HTML files directly rather than rewriting every route to `index.html`.
 - [BabylonPress](https://babylonpress.org/)
 
 Created by [Andrei Stepanov](https://babylonpress.org/).
+
+## License
+
+Licensed under the [Apache License 2.0](LICENSE).
