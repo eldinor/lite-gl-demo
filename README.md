@@ -11,6 +11,8 @@ TypeScript application.
 
 Repository: [eldinor/lite-gl-demo](https://github.com/eldinor/lite-gl-demo)
 
+Live demo: [litegl.babylonpress.org](https://litegl.babylonpress.org)
+
 ## Demo pages
 
 | Route | Demo | What it shows |
@@ -119,3 +121,5 @@ HTML files directly rather than rewriting every route to `index.html`.
 - [`@babylonjs/lite-gl` on npm](https://www.npmjs.com/package/@babylonjs/lite-gl)
 - [LITE-GL Demo on GitHub](https://github.com/eldinor/lite-gl-demo)
 - [BabylonPress](https://babylonpress.org/)
+
+Created by [Andrei Stepanov](https://babylonpress.org/).

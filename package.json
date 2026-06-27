@@ -1,7 +1,19 @@
 {
-  "name": "lite-gl-playground",
+  "name": "lite-gl-demo",
   "private": true,
   "version": "0.1.0",
+  "author": {
+    "name": "Andrei Stepanov",
+    "url": "https://babylonpress.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldinor/lite-gl-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eldinor/lite-gl-demo/issues"
+  },
+  "homepage": "https://litegl.babylonpress.org",
   "type": "module",
   "scripts": {
     "dev": "vite",
