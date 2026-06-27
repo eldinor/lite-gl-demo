@@ -74,8 +74,15 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.package-link {
+.header-links {
   margin-left: auto;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.package-link {
   color: #7f8882;
   font: 10px var(--mono);
   letter-spacing: 0.02em;
@@ -93,8 +100,53 @@ textarea {
   color: var(--acid);
 }
 
+.icon-link,
+.bp-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  color: #929a95;
+  text-decoration: none;
+  transition: color 160ms ease, opacity 160ms ease;
+}
+
+.icon-link:hover,
+.bp-link:hover {
+  color: #fff;
+  opacity: 0.82;
+}
+
+.github-link svg {
+  width: 19px;
+  height: 19px;
+}
+
+.project-links {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 12px;
+  margin-left: 2px;
+  border-left: 1px solid var(--line);
+}
+
+.bp-link img {
+  display: block;
+  width: 24px;
+  height: 28px;
+  object-fit: contain;
+}
+
 @media (max-width: 980px) {
   .package-link {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .header-links {
     display: none;
   }
 }
