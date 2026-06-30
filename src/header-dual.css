@@ -1,0 +1,26 @@
+.dual-canvas::before { background: transparent; }
+#heroEffectCanvas, #navEffectCanvas { position: absolute; left: 0; width: 100%; display: block; pointer-events: none; }
+#heroEffectCanvas { inset: 0; height: 100%; z-index: -2; }
+#navEffectCanvas { top: 0; height: 84px; z-index: -1; }
+.dual-canvas .site-header { position: relative; z-index: 1; }
+#cardEffectCanvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
+.dual-canvas .signal-map { isolation: isolate; }
+.dual-canvas .signal-card { border-color: rgba(23, 91, 179, .28); background: #061436; box-shadow: 0 30px 90px rgba(13, 56, 130, .22); }
+.dual-canvas .signal-head { color: #9abce8; border-color: rgba(93, 158, 240, .22); background: rgba(4, 20, 55, .84); }
+.dual-canvas .signal-head time { color: #5579a8; }
+.dual-canvas .signal-head i { background: #63ddff; box-shadow: 0 0 14px #29a9ff; }
+.dual-canvas .signal-map { height: 310px; background: #061436; }
+.network-light .signal-card { border-color: rgba(35, 91, 164, .18); background: rgba(255, 255, 255, .78); box-shadow: 0 30px 90px rgba(32, 79, 139, .15); }
+.network-light .signal-head { color: #385b82; border-color: rgba(35, 91, 164, .16); background: rgba(248, 251, 255, .88); }
+.network-light .signal-head time { color: #8297ad; }
+.network-light .signal-head i { background: #146cff; box-shadow: 0 0 12px rgba(20, 108, 255, .48); }
+.network-light .signal-map { background: #fafcff; }
+.network-plot .hero { grid-template-columns: minmax(0, 1fr) minmax(500px, 620px); gap: 48px; }
+.network-plot .signal-map { height: 460px; }
+.network-plot .signal-card { width: 100%; box-shadow: 0 36px 110px rgba(25, 72, 136, .19); }
+.plot-stats { position: absolute; z-index: 2; right: 14px; top: 14px; width: 150px; padding: 10px 12px; display: grid; gap: 7px; border: 1px solid rgba(25, 75, 139, .16); background: rgba(250, 252, 255, .78); box-shadow: 0 12px 32px rgba(32, 76, 132, .10); backdrop-filter: blur(12px); }
+.plot-stats div { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.plot-stats span { color: #71859a; font: 7px "SFMono-Regular", Consolas, monospace; text-transform: uppercase; letter-spacing: .11em; }
+.plot-stats b { color: #123d78; font: 9px "SFMono-Regular", Consolas, monospace; font-weight: 600; white-space: nowrap; }
+@media (max-width: 1100px) { .network-plot .hero { grid-template-columns: 1fr; } .network-plot .signal-card { width: min(100%, 620px); } }
+@media (max-width: 700px) { #navEffectCanvas { height: 70px; } }

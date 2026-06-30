@@ -18,7 +18,7 @@ app.innerHTML = `
   <div class="texture-shell">
     <header>
       ${BRAND_HTML}<span class="badge"><i></i> WebGL2</span>
-      <nav><a href="/shaders.html">Shaders</a><a href="/feedback.html">Feedback</a><a href="/particles.html">Particles</a><a href="/geometry.html">Geometry</a><a href="/texture.html" ${isTextureGallery ? 'aria-current="page"' : ""}>Texture</a></nav>${PACKAGE_LINK_HTML}
+      <nav><a href="/shaders.html">Shaders</a><a href="/feedback.html">Feedback</a><a href="/particles.html">Particles</a><a href="/geometry.html">Geometry</a><a href="/texture.html" ${isTextureGallery ? 'aria-current="page"' : ""}>Texture</a>${isTextureGallery ? "" : '<a href="/header-network-plot.html">Sample Cover</a>'}</nav>${PACKAGE_LINK_HTML}
     </header>
     <main>
       <canvas id="textureCanvas"></canvas>
